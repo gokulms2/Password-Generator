@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <form id="reload">
+            <label for="length">Lenth Of Password</label>
+            <input type="number" id="length" placeholder="Enter Length">
+            <input type="text" id="output" readonly>
+        </form>
+        <div>
+            <button type="button" onclick="genpsw()" class="btn"><i class="fa-solid fa-key"></i>Generate</button>
+            <button type="button" onclick="copypsw()" class="btn"><i class="fa-solid fa-copy"></i>Copy</button>
+            <button type="reset" onclick="reload()" class="btn"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
